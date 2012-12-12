@@ -244,3 +244,7 @@
 
 	* Bump version to 1.7.3
 
+2012-12-12 Nicolas Aguirre
+
+	* Merge with the 1.7.2 source code
+	* Add missing defines used in elementary
