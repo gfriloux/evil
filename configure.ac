@@ -114,7 +114,7 @@ case "$host_os" in
   *)
     have_wince="no"
     EVIL_CXXFLAGS="-fno-rtti -fno-exceptions"
-    EVIL_CPPFLAGS="-DSECURITY_WIN32"
+    EVIL_CPPFLAGS="${EVIL_CPPFLAGS} -DSECURITY_WIN32"
     ;;
 esac
 AC_SUBST([EVIL_CPPFLAGS])
