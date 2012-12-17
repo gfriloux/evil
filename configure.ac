@@ -159,6 +159,9 @@ echo "  OS...................: ${host_os}"
 echo "  Windows version......: ${_efl_windows_version}"
 echo
 echo "  Documentation........: ${build_doc}"
+if test "x${build_doc}" = "xyes" ; then
+echo "    Installation.......: make install-doc"
+fi
 echo
 echo "Compilation............: make (or gmake)"
 echo "  CPPFLAGS.............: $CPPFLAGS"

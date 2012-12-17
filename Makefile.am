@@ -37,10 +37,14 @@ m4/evil/evil_windows.m4
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = evil.pc
 
-.PHONY: doc
+.PHONY: doc install-doc
 
 # Documentation
 
 doc:
 	@echo "entering doc/"
 	make -C doc doc
+
+install-doc:
+	@echo "entering doc/"
+	make -C doc install-doc
