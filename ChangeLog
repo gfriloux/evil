@@ -273,3 +273,11 @@
 2013-08-02  Eduardo Lima (Etrunko)
 
         * 1.7.8 release
+
+2013-09-02  Cedric Bail
+
+        * evil: fix compilation for Windows >= Vista and gcc 4.8.1.
+
+2013-09-10  Eduardo Lima (Etrunko)
+
+        * 1.7.9 release

@@ -1,5 +1,9 @@
 Evil NEWS - User visible changes.
 
+* Evil 1.7.9:
+
+** fix compilation for Windows >= Vista and gcc 4.8.1.
+
 * Evil 1.7.8:
 
 ** Bumping version to match latest release, no changes made.
