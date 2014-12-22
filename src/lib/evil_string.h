@@ -159,6 +159,20 @@ EAPI char *strcasestr(const char *haystack, const char *needle);
  * Supported OS : Windows XP, Windows CE
  */
 EAPI char *strndup(const char *s, size_t n);
+
+/**
+ * @brief Find the last occurrence of 'c' in the buffer 's' of size 'n'.
+ *
+ * @param s The memory area to search.
+ * @param c The char to find.
+ * @param n The size of the memory area.
+ *
+ * Conformity: Non applicable.
+ *
+ * Supported OS: Windows XP
+ */
+EAPI void *memrchr(const void *s, int c, size_t n)
+
 /**
  * @}
  */
