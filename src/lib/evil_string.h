@@ -143,7 +143,22 @@ EAPI int strcasecmp(const char *s1, const char *s2);
  */
 EAPI char *strcasestr(const char *haystack, const char *needle);
 
-
+/**
+ * @brief Returns a pointer to a cupy of @b s.
+ *
+ * @param s The string to duplicate.
+ * @param n The number of chars to duplicate.
+ * @return
+ *
+ * Returns a pointer to a copy of @var{s} with at most @var{n} characters
+ * in memory obtained from @code{malloc}, or @code{NULL} if insufficient
+ * memory was available.  The result is always NUL terminated.
+ *
+ * Conformity: POSIX.1-2008
+ *
+ * Supported OS : Windows XP, Windows CE
+ */
+EAPI char *strndup(const char *s, size_t n);
 /**
  * @}
  */

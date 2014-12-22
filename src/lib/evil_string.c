@@ -127,3 +127,19 @@ char *strcasestr(const char *haystack, const char *needle)
 
    return NULL;
 }
+
+char *strndup(const char *s, size_t n)
+{
+   char *p;
+   size_t l = strlen (s);
+
+   if (l > n)
+     l = n;
+
+   p = (char *) malloc (l + 1);
+   if (!p)
+     return NULL;
+
+   p[len] = '\0';
+   return (char *) memcpy (p, s, l);
+}
