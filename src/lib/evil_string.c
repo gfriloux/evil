@@ -140,6 +140,6 @@ char *strndup(const char *s, size_t n)
    if (!p)
      return NULL;
 
-   p[len] = '\0';
+   p[l] = '\0';
    return (char *) memcpy (p, s, l);
 }
