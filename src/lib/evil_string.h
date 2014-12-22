@@ -171,7 +171,7 @@ EAPI char *strndup(const char *s, size_t n);
  *
  * Supported OS: Windows XP
  */
-EAPI void *memrchr(const void *s, int c, size_t n)
+EAPI void *memrchr(const void *s, int c, size_t n);
 
 /**
  * @}
