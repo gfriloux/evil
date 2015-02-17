@@ -76,11 +76,17 @@ strcoll (const char *s1, const char *s2)
 char *
 strrstr (const char *str, const char *substr)
 {
-  char *it;
-  char *ret = NULL;
+  char *it,
+       *ret = NULL;
+   size_t l = strlen(substr);
 
-  while ((it = strstr(str, substr)))
-    ret = it;
+   it = (char *)str;
+
+  while ((it = strstr(it, substr)))
+    {
+       ret = it;
+       it += l;
+    }
 
   return ret;
 }
