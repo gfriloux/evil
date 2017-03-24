@@ -59,6 +59,26 @@ EAPI char *evil_wchar_to_char(const wchar_t *text);
  */
 EAPI char *evil_utf16_to_utf8(const wchar_t *text);
 
+/**
+ * @brief Convert a string from UTF-8 to UTF-16.
+ *
+ * @param text8 The UTF-8 string to convert to UTF-16.
+ * @return The UTF-16 string.
+ *
+ * Convert a string from UTF-8 to UTF-16 and return it. If the
+ * allocation of conversion fails, NULL is returned. On success, the
+ * returned value must be freed when it is not used anymore.
+ *
+ * Conformity: Non applicable.
+ *
+ * Supported OS: Windows 95, Windows 98, Windows Me, Windows NT, Windows 2000,
+ * Windows XP.
+ *
+ * @since 1.7.13
+ * @ingroup Evil
+ */
+EAPI wchar_t *evil_utf8_to_utf16(const char *text8);
+
 EAPI char *evil_format_message(long err);
 
 EAPI char *evil_last_error_get(void);
