@@ -132,7 +132,7 @@ evil_utf8_to_utf16(const char *text8)
         return NULL;
      }
 
-   text16 = (wchar_t *)malloc(size16 * sizeof(wchar_t));
+   text16 = (wchar_t *)calloc(size16 + 1, sizeof(wchar_t));
    if (!text16)
      return NULL;
 
